@@ -23,20 +23,20 @@ const SERVICES_DATA: Service[] = [
 ];
 
 const BENEFITS_DATA: Benefit[] = [
-    { 
-        icon: "shield", 
-        title: "Protect Investment", 
-        description: "Regular maintenance prevents long-term damage and corrosion." 
+    {
+        icon: "shield",
+        title: "Protect Investment",
+        description: "Regular maintenance prevents long-term damage and corrosion."
     },
-    { 
-        icon: "bolt", 
-        title: "Increase Output", 
-        description: "Clean panels absorb more sunlight, generating more electricity for your home." 
+    {
+        icon: "bolt",
+        title: "Increase Output",
+        description: "Clean panels absorb more sunlight, generating more electricity for your home."
     },
-    { 
-        icon: "history", 
-        title: "Extend Lifespan", 
-        description: "Proper care ensures your solar system lasts for decades." 
+    {
+        icon: "history",
+        title: "Extend Lifespan",
+        description: "Proper care ensures your solar system lasts for decades."
     },
 ];
 
@@ -47,7 +47,7 @@ const IMAGES = {
 };
 
 const App: React.FC = () => {
-    
+
     const handleBookClick = () => {
         window.open(GOOGLE_FORM_URL, '_blank');
     };
@@ -55,16 +55,16 @@ const App: React.FC = () => {
     return (
         <div className="min-h-screen pb-24 md:pb-0">
             <Navbar onBookClick={handleBookClick} />
-            
+
             <main className="max-w-5xl mx-auto">
                 {/* Hero Section */}
                 <header className="@container">
                     <div className="@[480px]:p-4">
-                        <div 
-                            className="relative flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-2xl items-center justify-center p-6 text-center overflow-hidden" 
+                        <div
+                            className="relative flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-2xl items-center justify-center p-6 text-center overflow-hidden"
                             style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(23, 22, 18, 0.95) 100%), url("${IMAGES.hero}")` }}
                         >
-                             {/* Subtle animated overlay */}
+                            {/* Subtle animated overlay */}
                             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 mix-blend-overlay pointer-events-none"></div>
 
                             <div className="flex flex-col gap-4 max-w-lg z-10 animate-[fadeInUp_0.8s_ease-out]">
@@ -78,7 +78,7 @@ const App: React.FC = () => {
                                     Don't let dust cost you money. Restore up to 25% efficiency with professional cleaning.
                                 </p>
                             </div>
-                            
+
                             <div className="z-10 animate-[fadeInUp_1s_ease-out_0.2s_both]">
                                 <Button onClick={handleBookClick} iconName="arrow_forward">
                                     Book Now
@@ -99,10 +99,10 @@ const App: React.FC = () => {
                             Up to 25% Energy Loss Restored
                         </span>
                     </div>
-                    
-                    <ComparisonSlider 
-                        beforeImage={IMAGES.dirty} 
-                        afterImage={IMAGES.clean} 
+
+                    <ComparisonSlider
+                        beforeImage={IMAGES.dirty}
+                        afterImage={IMAGES.clean}
                     />
                 </section>
 
@@ -111,7 +111,7 @@ const App: React.FC = () => {
                     <h2 className="text-white text-3xl font-bold leading-tight tracking-[-0.015em] mb-8 text-center md:text-left">Premium Services</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {SERVICES_DATA.map((service, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-surface-dark p-6 rounded-2xl border border-white/5 hover:border-primary/50 hover:bg-surface-dark-highlight/50 transition-all duration-300 group flex flex-col items-center md:items-start gap-4 text-center md:text-left hover:-translate-y-1 shadow-lg"
                             >
@@ -151,10 +151,10 @@ const App: React.FC = () => {
                         <h2 className="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Meet The 4 Friends</h2>
                         <p className="text-gray-400 mt-3 max-w-md">Dedicated partners committed to powering your sustainable future.</p>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
                         {TEAM_DATA.map((member, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-surface-dark p-5 rounded-xl border border-white/5 flex items-center justify-between hover:border-primary/30 transition-colors group"
                             >
@@ -182,22 +182,12 @@ const App: React.FC = () => {
             {/* Footer */}
             <footer className="bg-surface-dark border-t border-white/5 px-6 pt-16 pb-32 md:pb-16 text-center mt-12">
                 <div className="max-w-5xl mx-auto flex flex-col items-center">
-                    
+
                     {/* Logo / Brand */}
                     <div className="flex items-center gap-3 mb-6">
-                        <div className="relative size-12 flex items-center justify-center border-2 border-primary/50 rounded-full transition-colors">
-                            <span className="font-black text-primary text-2xl italic pr-0.5">4</span>
-                        </div>
-                        <div className="flex flex-col items-start leading-none">
-                            <span className="text-2xl font-black text-white tracking-wide uppercase">
-                                Friends
-                            </span>
-                            <span className="text-[0.7rem] font-bold text-gray-400 tracking-[0.1em] uppercase">
-                                Solar Cleaning Services
-                            </span>
-                        </div>
+                        <img src="/logo.png" alt="4 Friends Solar Cleaning Services" className="h-14 w-auto object-contain" />
                     </div>
-                    
+
                     <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 items-center mb-12">
                         <a className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group" href="mailto:4fsolarcleaningservices@gmail.com">
                             <div className="size-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
@@ -206,14 +196,14 @@ const App: React.FC = () => {
                             4fsolarcleaningservices@gmail.com
                         </a>
                     </div>
-                    
+
                     <p className="text-xs text-gray-700">© 2024 4 Friends Solar Cleaning Services.</p>
                 </div>
             </footer>
 
             {/* Sticky Mobile Footer CTA */}
             <div className="fixed bottom-0 left-0 w-full p-4 bg-background-dark/90 backdrop-blur-lg border-t border-surface-dark-highlight z-40 safe-area-bottom md:hidden animate-[slideUp_0.5s_ease-out]">
-                <button 
+                <button
                     onClick={handleBookClick}
                     className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-light text-black font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]"
                 >
