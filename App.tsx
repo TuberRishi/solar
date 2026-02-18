@@ -9,10 +9,10 @@ import { TeamMember, Service, Benefit } from './types';
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScRFf7E6KokHk4e9RmgVLxfcGAMp4i0TcJrmdZpEdJNZs_vYA/viewform";
 
 const TEAM_DATA: TeamMember[] = [
+    { name: "Rushikesh Marghade", role: "Partner", phone: "8010471219" },
     { name: "Rushikesh Alewad", role: "Partner", phone: "9579700218" },
     { name: "Pawan Ghate", role: "Partner", phone: "9359750295" },
     { name: "Nikhil Paulzagade", role: "Partner", phone: "7875692644" },
-    { name: "Rushikesh Marghade", role: "Partner", phone: "8010471219" },
 ];
 
 const SERVICES_DATA: Service[] = [
