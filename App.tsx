@@ -185,7 +185,7 @@ const App: React.FC = () => {
 
                     {/* Logo / Brand */}
                     <div className="flex items-center gap-3 mb-6">
-                        <img src="/logo.png" alt="4 Friends Solar Cleaning Services" className="h-14 w-auto object-contain" />
+                        <img src="/logo.png" alt="4 Friends Solar Cleaning Services" className="h-24 w-auto object-contain" />
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 items-center mb-12">
