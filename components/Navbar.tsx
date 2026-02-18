@@ -38,13 +38,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
                     <Icon name={isMenuOpen ? "close" : "menu"} className="text-[28px]" />
                 </button>
 
-                {/* Logo */}
-                <h2 
-                    className="text-white text-lg font-bold leading-tight tracking-[-0.015em] cursor-pointer"
+                {/* Logo / Brand */}
+                <div 
+                    className="flex items-center gap-2 cursor-pointer group"
                     onClick={() => scrollToSection('#')}
                 >
-                    <span className="text-primary">4 Friends</span> Solar
-                </h2>
+                    <div className="relative size-10 flex items-center justify-center border-2 border-primary/50 rounded-full group-hover:border-primary transition-colors">
+                        <span className="font-black text-primary text-xl italic pr-0.5">4</span>
+                    </div>
+                    <div className="flex flex-col items-start leading-none">
+                        <span className="text-lg font-black text-white tracking-wide uppercase group-hover:text-primary transition-colors">
+                            Friends
+                        </span>
+                        <span className="text-[0.6rem] font-bold text-gray-400 tracking-[0.1em] uppercase">
+                            Solar Cleaning Services
+                        </span>
+                    </div>
+                </div>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-6">

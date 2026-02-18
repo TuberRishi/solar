@@ -181,9 +181,22 @@ const App: React.FC = () => {
 
             {/* Footer */}
             <footer className="bg-surface-dark border-t border-white/5 px-6 pt-16 pb-32 md:pb-16 text-center mt-12">
-                <div className="max-w-5xl mx-auto">
-                    <h3 className="text-primary font-bold text-2xl mb-2">4 Friends Solar</h3>
-                    <p className="text-gray-500 text-sm mb-8">Cleaning Services & Maintenance</p>
+                <div className="max-w-5xl mx-auto flex flex-col items-center">
+                    
+                    {/* Logo / Brand */}
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="relative size-12 flex items-center justify-center border-2 border-primary/50 rounded-full transition-colors">
+                            <span className="font-black text-primary text-2xl italic pr-0.5">4</span>
+                        </div>
+                        <div className="flex flex-col items-start leading-none">
+                            <span className="text-2xl font-black text-white tracking-wide uppercase">
+                                Friends
+                            </span>
+                            <span className="text-[0.7rem] font-bold text-gray-400 tracking-[0.1em] uppercase">
+                                Solar Cleaning Services
+                            </span>
+                        </div>
+                    </div>
                     
                     <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12 items-center mb-12">
                         <a className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group" href="mailto:4fsolarcleaningservices@gmail.com">
