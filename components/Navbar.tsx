@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
                     className="flex items-center gap-2 cursor-pointer group"
                     onClick={() => scrollToSection('#')}
                 >
-                    <img src="/logo.png" alt="4 Friends Solar Cleaning Services" className="h-16 w-auto object-contain" />
+                    <img src="/logo.png" alt="4 Friends Solar Cleaning Services" className="h-20 w-auto object-contain" />
                 </div>
 
                 {/* Desktop Nav */}
